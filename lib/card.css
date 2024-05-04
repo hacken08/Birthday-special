@@ -59,7 +59,7 @@
   font-family: 'Brush Script MT', cursive;
   font-size: 28px;
   line-height: 25px;
-  top: 31px;
+  top: 21px;
   text-align: center;
   left: 64px;
   color: #003049;
@@ -68,13 +68,13 @@
 .heart {
   background-color: #d62828;
   display: inline-block;
-  height: 30px;
+  height: 20px;
   margin: 0 10px;
   position: relative;
-  top: 110px;
+  top: 120px;
   left: 105px;
   transform: rotate(-45deg);
-  width: 30px;
+  width: 20px;
 }
 
 .heart:before,
@@ -82,9 +82,9 @@
   content: "";
   background-color: #d62828;
   border-radius: 50%;
-  height: 30px;
+  height: 20px;
   position: absolute;
-  width: 30px;
+  width: 20px;
 }
 
 .heart:before {
