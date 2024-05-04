@@ -1,0 +1,175 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&family=Oswald:wght@200..700&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+
+
+
+* {
+    font-family: "Poppins", sans-serif;
+    font-style: normal;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fae1dd;
+    height: 97vh;
+    width: 99vw;
+}
+
+nav {
+    top: 0px;
+    height: 60px;
+    width: inherit;
+    position: absolute;
+    /* border: 2px solid red; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav  h2{
+    font-weight: 500;
+    font-size: 20px;
+}
+
+nav img {
+    margin-bottom: 4px;
+}
+
+.righ, .left {
+    word-spacing: 8px;
+    margin: 0px 20px;
+    display: flex;
+    gap: 10px;
+}
+
+/* ============== countdown ============== */
+.count-cont {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 130px;
+}
+
+#heading {
+    font-size: 30px;
+    font-weight: 500;
+    color: #0e0e0e;
+}
+
+#countdown {
+    font-size: 76px;
+    font-weight: 600;
+    word-spacing: 30px;
+    line-height: 80px;
+    font-family: "Roboto Condensed", sans-serif;
+    color: linear-gradient(black, rgb(255, 255, 255));
+}
+
+
+/* ============== Gift and msg ============== */
+.giftContainer {
+    position: relative;
+    display: none;
+    margin-right: 400px;
+}
+
+#gift {
+    width: 320px;
+    position: relative;
+    top: 30px;
+    cursor: pointer;
+}
+
+#giftShadow {
+    width: 147px;
+    position: absolute;
+    left: 78px;
+    bottom: -10px;
+    display: none;
+    animation: scale2 1.8s linear infinite;
+}
+
+
+/* // ------------ animatio ----------- */
+
+.bg-color {
+    background-color: red;
+}
+
+.shake {
+    animation: shake 0.8s cubic-bezier(.36, .07, .19, .97) both infinite;
+    transform: translate(1px, 1px);
+}
+
+.pulse {
+    animation: pulsate 1.8s linear infinite;
+    transform: translate(1px, 1px);
+}
+
+
+@keyframes shake {
+
+    0%,
+    100% {
+        transform: translate(0, 0) rotate(0deg);
+    }
+
+    10% {
+        transform: translate(-10px, 0) rotate(-1deg);
+    }
+
+    20% {
+        transform: translate(8px, 0) rotate(1deg);
+    }
+
+    30% {
+        transform: translate(6px, 0) rotate(-1deg);
+    }
+
+    40% {
+        transform: translate(-4px, 0) rotate(1deg);
+    }
+
+    50% {
+        transform: translate(2px, 0) rotate(-1deg);
+    }
+
+    /* 60% { transform: translate(1px, 0) rotate(0deg); }
+    70% { transform: translate(-1px, 0) rotate(1deg); }
+    80% { transform: translate(-1px, 0) rotate(-1deg); }
+    90% { transform: translate(1px, 0) rotate(0deg); }
+    */
+}
+
+@keyframes scale2 {
+
+    0% {
+        transform: scaleX(0.8);
+    }
+
+    50% {
+        transform: scaleX(0.87);
+    }
+
+    100% {
+        transform: scaleX(0.8);
+    }
+}
+
+@keyframes pulsate {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.03);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
